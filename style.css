@@ -1,0 +1,139 @@
+/*
+  Cascading StyleSheet
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  color: #000000cc;
+}
+
+.logo {
+  width: 120px;
+  margin: 60px 0;
+}
+
+header p {
+  font-size: 14px;
+}
+
+header, main, footer {
+  text-align: center;
+}
+
+header, .form, main {
+  margin: 0 auto 70px;
+  width: 90%;
+  max-width: 500px;
+}
+
+header button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  background-color: #ff4f4f;
+  color: #fff;
+}
+
+header h1, main h2 {
+  margin-bottom: 70px;
+}
+
+main h2 span {
+  color: #ff4f4f;
+}
+
+.blood {
+  color: #ffffffdd;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.blood::before {
+  content: "";
+  z-index: -1;
+  background-color: #ff4f4fcc;
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+}
+
+.donor p {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.form h2 {
+  text-align: center;
+  color: #ffffffee;
+  font-size: 18px;
+}
+
+section.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 45px;
+  background-color: #ff4f4f;
+  padding: 16px 64px;
+  border-radius: 6px;
+}
+
+form input, form button {
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 8px 16px;
+  border: 1px #ffffff88 solid;
+  border-radius: 4px;
+}
+
+form input {
+  background-color: transparent;
+}
+
+form input::placeholder {
+  color: #ffffffaa;
+}
+
+form button {
+  font-weight: bold;
+}
+
+main .donors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+footer {
+  margin-top: auto;
+  border-top: 1px #ccc solid;
+  padding: 16px;
+}
